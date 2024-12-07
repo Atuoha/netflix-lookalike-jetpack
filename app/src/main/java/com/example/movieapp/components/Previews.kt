@@ -14,7 +14,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.movieapp.models.moviewPreviews
+import com.example.movieapp.models.moviePreviews
 import com.example.movieapp.widgets.CircleImagePreview
 
 @Composable
@@ -30,7 +30,7 @@ fun Previews() {
     )
     Spacer(modifier = Modifier.height(20.dp))
     LazyRow(modifier = Modifier.fillMaxWidth()) {
-        items(moviewPreviews) { preview ->
+        items(moviePreviews) { preview ->
             CircleImagePreview(item = preview)
         }
     }

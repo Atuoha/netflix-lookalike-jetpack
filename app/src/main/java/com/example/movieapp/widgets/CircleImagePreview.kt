@@ -17,10 +17,10 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.movieapp.models.MoviePreviewItem
-import com.example.movieapp.models.moviewPreviews
+import com.example.movieapp.models.moviePreviews
 
 @Composable
-fun CircleImagePreview(item: MoviePreviewItem = moviewPreviews[1]) {
+fun CircleImagePreview(item: MoviePreviewItem = moviePreviews[1]) {
     Box(modifier = Modifier
         .padding(end = 10.dp)
         .background(color = item.color, shape = CircleShape)

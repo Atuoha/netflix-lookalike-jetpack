@@ -69,4 +69,7 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation ("androidx.navigation:navigation-compose:2.8.3")
     implementation ("com.google.code.gson:gson:2.10.1")
+
+    
 }
+

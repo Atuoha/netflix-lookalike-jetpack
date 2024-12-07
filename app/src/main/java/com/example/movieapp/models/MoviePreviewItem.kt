@@ -7,7 +7,7 @@ class MoviePreviewItem(val image: Int, val titleImage: Int, val color: Color) {
 }
 
 
-val moviewPreviews = listOf<MoviePreviewItem>(
+val moviePreviews = listOf(
     MoviePreviewItem(
         image = R.drawable.sintel,
         titleImage = R.drawable.sintel_title,

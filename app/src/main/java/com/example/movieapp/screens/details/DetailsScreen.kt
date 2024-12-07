@@ -18,7 +18,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -33,6 +32,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+//import coil3.compose.AsyncImage
 import com.example.movieapp.MovieDetailsApp
 import com.example.movieapp.models.Movie
 import com.example.movieapp.models.newlyReleased
@@ -61,14 +61,14 @@ fun DetailsScreen(navController: NavController,movie: Movie) {
 
                             modifier = Modifier
                                 .size(40.dp)
-                                .clickable  { navController.popBackStack() }
+                                .clickable { navController.popBackStack() }
 
                                 .background(
                                     Color.Gray.copy(alpha = 0.1f),
 
                                     shape = CircleShape,
 
-                                ),
+                                    ),
                             contentAlignment = Alignment.Center
                         ) {
                             Icon(
@@ -153,6 +153,11 @@ fun MovieDetails(movie: Movie = newlyReleased[3]) {
                         textAlign = TextAlign.Justify,
                     ),
                 )
+                Spacer(modifier = Modifier.height(10.dp))
+//                AsyncImage(
+//                    model = "https://www.gstatic.com/devrel-devsite/prod/v870e399c64f7c43c99a3043db4b3a74327bb93d0914e84a0c3dba90bbfd67625/android/images/lockup.svg",
+//                    contentDescription = "Translated description of what the image contains"
+//                )
             }
 
 
